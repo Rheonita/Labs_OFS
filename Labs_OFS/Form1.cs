@@ -19,7 +19,8 @@ namespace Labs_OFS
 
         private void лабораторнаяРабота1ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            Lab6 lbwindow = new Lab6();
+            lbwindow.Show();
         }
 
         private void лабораторнаяРабота1ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -44,6 +45,24 @@ namespace Labs_OFS
         private void лабораторнаяРабота4ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Lab4 lbwindow = new Lab4();
+            lbwindow.Show();
+        }
+
+        private void лабораторнаяРабота5ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Lab5 lbwindow = new Lab5();
+            lbwindow.Show();
+        }
+
+        private void лабораторнаяРабота7ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Lab7 lbwindow = new Lab7();
+            lbwindow.Show();
+        }
+
+        private void лабораторнаяРабота8ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Lab8 lbwindow = new Lab8();
             lbwindow.Show();
         }
     }

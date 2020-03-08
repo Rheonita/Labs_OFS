@@ -102,6 +102,7 @@
             this.лабораторнаяРабота5ToolStripMenuItem.Name = "лабораторнаяРабота5ToolStripMenuItem";
             this.лабораторнаяРабота5ToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.лабораторнаяРабота5ToolStripMenuItem.Text = "Лабораторная работа №5";
+            this.лабораторнаяРабота5ToolStripMenuItem.Click += new System.EventHandler(this.лабораторнаяРабота5ToolStripMenuItem_Click);
             // 
             // лабораторнаяРабота1ToolStripMenuItem1
             // 
@@ -115,12 +116,14 @@
             this.лабораторнаяРабота7ToolStripMenuItem.Name = "лабораторнаяРабота7ToolStripMenuItem";
             this.лабораторнаяРабота7ToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.лабораторнаяРабота7ToolStripMenuItem.Text = "Лабораторная работа №7";
+            this.лабораторнаяРабота7ToolStripMenuItem.Click += new System.EventHandler(this.лабораторнаяРабота7ToolStripMenuItem_Click);
             // 
             // лабораторнаяРабота8ToolStripMenuItem
             // 
             this.лабораторнаяРабота8ToolStripMenuItem.Name = "лабораторнаяРабота8ToolStripMenuItem";
             this.лабораторнаяРабота8ToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.лабораторнаяРабота8ToolStripMenuItem.Text = "Лабораторная работа №8";
+            this.лабораторнаяРабота8ToolStripMenuItem.Click += new System.EventHandler(this.лабораторнаяРабота8ToolStripMenuItem_Click);
             // 
             // iIМодульToolStripMenuItem
             // 
