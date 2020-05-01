@@ -65,5 +65,29 @@ namespace Labs_OFS
             Lab8 lbwindow = new Lab8();
             lbwindow.Show();
         }
+
+        private void лабораторнаяРабота9ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Lab9 lbwindow = new Lab9();
+            lbwindow.Show();
+        }
+
+        private void лабораторнаяРабота10ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Lab10 lbwindow = new Lab10();
+            lbwindow.Show();
+        }
+
+        private void лабораторнаяРабота11ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Lab11 lbwindow = new Lab11();
+            lbwindow.Show();
+        }
+
+        private void лабораторнаяРабота12ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Lab12 lbwindow = new Lab12();
+            lbwindow.Show();
+        }
     }
 }

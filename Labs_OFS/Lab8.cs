@@ -27,48 +27,83 @@ namespace Labs_OFS
             //Заполняем матрицу случайными числами
             Random rand = new Random();
             for (i = 0; i < 15; i++)
+            {
                 for (j = 0; j < 15; j++)
+                {
                     a[i, j] = rand.Next(-3, 10);
+                }
+            }
             // Выводим матрицу в dataGridView1
             for (i = 0; i < 15; i++)
+            {
                 for (j = 0; j < 15; j++)
+                {
                     dataGridView1.Rows[i].Cells[j].Value =
                      a[i, j].ToString();
+                }
+            }
             // Поиск максимального элемента 
             // на дополнительной диагонали
-            bool doubleflag = false;
-            bool flag = false;
-            int sumofavg = 0;
-            int numofstr = 0;
-            int k=0;
-            int avg = 0;
-            for (i = 0; i < 15; i++)
+            List<int> ll = new List<int>();
+            for (i= 0; i < 15; i++)
             {
-                numofstr++;
-                for (j = 0; j < 15; j++)
-                {                    
-                    if (a[i, 0] == 1)
+                if (a[i, 0] == 1)
+                { ll.Add(i); }
+            }
+            if (ll.Count == 0)
+            {
+                textBox2.Text = "Нет строк начинающихся на 1";
+            }
+            else
+            {
+            
+                foreach (int l in ll)
+                {
+                    int avg = 0; // среднее аф
+                    int sumofavg = 0; // Сумма значений
+                    for (j = 0; j < 15;j ++)
                     {
-                        k = numofstr;
-                        avg += a[i, j];
-                        //sumofavg = avg / 15;
-                        flag = true;
+                        sumofavg += a[l, j];
                     }
-                    sumofavg = avg / 15;
-                    
-                }                
-                //sumofavg = 0;
-                //avg = 0;
+                    avg = sumofavg / 15;
+                    textBox2.Text += "Строка №" + Convert.ToString(l+1) + " Среднее АФ =" + Convert.ToString(avg) + Environment.NewLine;
+                }
             }
-            if (flag == true)
-            {
-                textBox2.Text += "Среднее АФ = " + Convert.ToString(sumofavg) + Environment.NewLine + "Строка №" + Convert.ToString(k);
-                doubleflag = true;
-            }
-            if (doubleflag == false)
-            {
-                textBox2.Text = "Такого числа нет";
-            }                      
+            //bool doubleflag = false;
+            //bool flag = false;
+            //int sumofavg = 0;
+            //int numofstr = 0;
+            //int k=0;
+            //int avg = 0;
+            //for (i = 0; i < 15; i++)
+            //{
+            //    numofstr++;
+            //    for (j = 0; j < 15; j++)
+            //    {                    
+            //        if (a[i, 0] == 1)
+            //        {
+            //            k = numofstr;
+            //            avg += a[i, j];
+            //            numofstr = 0;
+            //            //sumofavg = avg / 15;
+            //            flag = true;
+            //        }
+            //        sumofavg = avg / 15;
+
+                //    }
+
+                //    //sumofavg = 0;
+                //    //avg = 0;
+                //}
+                //if (flag == true)
+                //{
+                //    textBox2.Text += "Среднее АФ = " + Convert.ToString(sumofavg) + Environment.NewLine + "Строка №" + Convert.ToString(k);
+                //    doubleflag = true;
+                //}
+                //if (doubleflag == false)
+                //{
+                //    textBox2.Text = "Такого числа нет";
+                //}                      
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)

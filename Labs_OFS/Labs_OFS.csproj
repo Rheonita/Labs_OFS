@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="50Lines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50Lines.Designer.cs">
+      <DependentUpon>50Lines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ellipse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ellipse.Designer.cs">
+      <DependentUpon>Ellipse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +70,24 @@
     </Compile>
     <Compile Include="Lab1.Designer.cs">
       <DependentUpon>Lab1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab10.Designer.cs">
+      <DependentUpon>Lab10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab11.Designer.cs">
+      <DependentUpon>Lab11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab12.Designer.cs">
+      <DependentUpon>Lab12.cs</DependentUpon>
     </Compile>
     <Compile Include="Lab2.cs">
       <SubType>Form</SubType>
@@ -100,13 +131,64 @@
     <Compile Include="Lab8.Designer.cs">
       <DependentUpon>Lab8.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lab9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab9.Designer.cs">
+      <DependentUpon>Lab9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab91.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab91.Designer.cs">
+      <DependentUpon>Lab91.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MixedPaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MixedPaint.Designer.cs">
+      <DependentUpon>MixedPaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polygon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polygon.Designer.cs">
+      <DependentUpon>Polygon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shtryh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shtryh.Designer.cs">
+      <DependentUpon>Shtryh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Smes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Smes.Designer.cs">
+      <DependentUpon>Smes.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="50Lines.resx">
+      <DependentUpon>50Lines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ellipse.resx">
+      <DependentUpon>Ellipse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lab1.resx">
       <DependentUpon>Lab1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab10.resx">
+      <DependentUpon>Lab10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab11.resx">
+      <DependentUpon>Lab11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab12.resx">
+      <DependentUpon>Lab12.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lab2.resx">
       <DependentUpon>Lab2.cs</DependentUpon>
@@ -129,6 +211,18 @@
     <EmbeddedResource Include="Lab8.resx">
       <DependentUpon>Lab8.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Lab9.resx">
+      <DependentUpon>Lab9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab91.resx">
+      <DependentUpon>Lab91.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MixedPaint.resx">
+      <DependentUpon>MixedPaint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Polygon.resx">
+      <DependentUpon>Polygon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -137,7 +231,14 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Shtryh.resx">
+      <DependentUpon>Shtryh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Smes.resx">
+      <DependentUpon>Smes.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -150,6 +251,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

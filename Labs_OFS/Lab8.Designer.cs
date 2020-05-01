@@ -33,15 +33,16 @@
             this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(137, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(209, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(399, 263);
+            this.dataGridView1.Size = new System.Drawing.Size(327, 263);
             this.dataGridView1.TabIndex = 0;
             // 
             // button1
@@ -69,7 +70,8 @@
             this.textBox2.Location = new System.Drawing.Point(12, 28);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(119, 82);
+            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox2.Size = new System.Drawing.Size(191, 151);
             this.textBox2.TabIndex = 5;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -82,11 +84,22 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Среднее АФ и Строка";
             // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(9, 182);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(183, 93);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Дана матрица F(15,15). Вывести номер и среднее арифметическое элементов строки, н" +
+    "ачинающейся с 1. Если такой строки нет, то\r\nвывести сообщение «Строки нет». \r\n\r\n" +
+    "";
+            // 
             // Lab8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(556, 326);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button2);
@@ -107,5 +120,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

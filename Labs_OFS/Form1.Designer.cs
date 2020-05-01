@@ -40,6 +40,10 @@
             this.лабораторнаяРабота7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.лабораторнаяРабота8ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iIМодульToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.лабораторнаяРабота9ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.лабораторнаяРабота10ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.лабораторнаяРабота11ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.лабораторнаяРабота12ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -127,9 +131,42 @@
             // 
             // iIМодульToolStripMenuItem
             // 
+            this.iIМодульToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.лабораторнаяРабота9ToolStripMenuItem,
+            this.лабораторнаяРабота10ToolStripMenuItem,
+            this.лабораторнаяРабота11ToolStripMenuItem,
+            this.лабораторнаяРабота12ToolStripMenuItem});
             this.iIМодульToolStripMenuItem.Name = "iIМодульToolStripMenuItem";
             this.iIМодульToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.iIМодульToolStripMenuItem.Text = "II Модуль";
+            // 
+            // лабораторнаяРабота9ToolStripMenuItem
+            // 
+            this.лабораторнаяРабота9ToolStripMenuItem.Name = "лабораторнаяРабота9ToolStripMenuItem";
+            this.лабораторнаяРабота9ToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
+            this.лабораторнаяРабота9ToolStripMenuItem.Text = "Лабораторная работа №9";
+            this.лабораторнаяРабота9ToolStripMenuItem.Click += new System.EventHandler(this.лабораторнаяРабота9ToolStripMenuItem_Click);
+            // 
+            // лабораторнаяРабота10ToolStripMenuItem
+            // 
+            this.лабораторнаяРабота10ToolStripMenuItem.Name = "лабораторнаяРабота10ToolStripMenuItem";
+            this.лабораторнаяРабота10ToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
+            this.лабораторнаяРабота10ToolStripMenuItem.Text = "Лабораторная работа №10";
+            this.лабораторнаяРабота10ToolStripMenuItem.Click += new System.EventHandler(this.лабораторнаяРабота10ToolStripMenuItem_Click);
+            // 
+            // лабораторнаяРабота11ToolStripMenuItem
+            // 
+            this.лабораторнаяРабота11ToolStripMenuItem.Name = "лабораторнаяРабота11ToolStripMenuItem";
+            this.лабораторнаяРабота11ToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
+            this.лабораторнаяРабота11ToolStripMenuItem.Text = "Лабораторная работа №11";
+            this.лабораторнаяРабота11ToolStripMenuItem.Click += new System.EventHandler(this.лабораторнаяРабота11ToolStripMenuItem_Click);
+            // 
+            // лабораторнаяРабота12ToolStripMenuItem
+            // 
+            this.лабораторнаяРабота12ToolStripMenuItem.Name = "лабораторнаяРабота12ToolStripMenuItem";
+            this.лабораторнаяРабота12ToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
+            this.лабораторнаяРабота12ToolStripMenuItem.Text = "Лабораторная работа №12";
+            this.лабораторнаяРабота12ToolStripMenuItem.Click += new System.EventHandler(this.лабораторнаяРабота12ToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -161,6 +198,10 @@
         private System.Windows.Forms.ToolStripMenuItem iIМодульToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem лабораторнаяРабота7ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem лабораторнаяРабота8ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem лабораторнаяРабота9ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem лабораторнаяРабота10ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem лабораторнаяРабота11ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem лабораторнаяРабота12ToolStripMenuItem;
     }
 }
 

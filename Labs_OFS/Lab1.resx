@@ -117,4 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Разместите на форме ряд кнопок (Button), и одно поле ввода
+(TextBox). Создайте обработчики события нажатия на данные кнопки,
+которые будут менять текст на нажатой кнопке. Текст на кнопке берется
+из поля ввода. 
+</value>
+  </data>
 </root>

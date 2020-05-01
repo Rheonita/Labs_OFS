@@ -18,6 +18,11 @@ namespace Labs_OFS
         }
         double x,y, x0, xk, a, b, dx;
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            textBox5.Text = "";
+        }
+
         private void button3_Click(object sender, EventArgs e)
         {
             textBox1.Text = "5,3";
@@ -34,7 +39,7 @@ namespace Labs_OFS
 
         private void label5_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -50,11 +55,23 @@ namespace Labs_OFS
             a = double.Parse(textBox4.Text);
             b = double.Parse(textBox6.Text);
             x = x0;
-            while (x <= xk)
+            if (x0 < xk)
             {
-                y = a * Math.Pow(x, 3) + Math.Pow(Math.Cos(Math.Pow(x, 3) - b), 2);
-                textBox5.Text += "x=" + Convert.ToString(x) + "; y=" + Convert.ToString(y) + Environment.NewLine;
-                x = x + dx;
+                while (x <= xk)
+                {
+                    y = a * Math.Pow(x, 3) + Math.Pow(Math.Cos(Math.Pow(x, 3) - b), 2);
+                    textBox5.Text += "x=" + Convert.ToString(x) + "; y=" + Convert.ToString(y) + Environment.NewLine;
+                    x = x + dx;
+                }
+            }
+            else if (x0 > xk)
+            {
+                while (xk <= x)
+                {
+                    y = a * Math.Pow(x, 3) + Math.Pow(Math.Cos(Math.Pow(x, 3) - b), 2);
+                    textBox5.Text += "x=" + Convert.ToString(x) + "; y=" + Convert.ToString(y) + Environment.NewLine;
+                    x = x - dx;
+                }
             }
         }
     }
